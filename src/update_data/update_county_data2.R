@@ -1,9 +1,9 @@
 
 # 1) Get the link to the apple data
-apple_link = "https://covid19-static.cdn-apple.com/covid19-mobility-data/2101HotfixDev12/v3/en-us/applemobilitytrends-2021-02-10.csv"
+apple_link = "https://covid19-static.cdn-apple.com/covid19-mobility-data/2103HotfixDev16/v3/en-us/applemobilitytrends-2021-03-10.csv"
 
 # 2) Load necessary functions
-source("src/functions.R")
+source("src/update_data/functions.R")
 
 # 3) Load the data
 

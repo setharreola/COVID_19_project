@@ -14,8 +14,8 @@ library(gganimate)
 library(transformr)
 library(ggtext)
 
-#socal_counties_imputed <- read_csv("///Users/setharreola/Documents/COVID-19/socal_data_1_22_2021.csv")
-socal_counties_imputed <- read_csv("~/socal_data_1_22_2021.csv")
+socal_counties_imputed <- read_csv("///Users/setharreola/Documents/COVID_19_project/data/socal_imputed_covid_data_03_01.csv")
+#socal_counties_imputed <- read_csv("~/socal_data_1_22_2021.csv")
 covid_data <- socal_counties_imputed
 
 # remove unnecessary column if needed 
@@ -319,7 +319,7 @@ ggplot(data=rs_df) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in Riverside County, CA\nfrom 2/24/2020 to 11/29/2020 (LASSO) MSE: 95997.32 (SoCal Data)") +
+  ggtitle("Reported Cases of COVID-19 in Riverside County, CA\nfrom 2/24/2020 to 2/10/2021 (LASSO) MSE: 997667.2 (SoCal Data)") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month") 
 
@@ -341,7 +341,7 @@ ggplot(data=rs_df) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in Riverside County, CA\nfrom 2/24/2020 to 11/29/2020 (Glarma) MSE: 103606.5") +
+  ggtitle("Reported Cases of COVID-19 in Riverside County, CA\nfrom 2/24/2020 to 2/10/2021 (Glarma) MSE: 498411.6") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month")
 
@@ -382,7 +382,7 @@ ggplot(data=vc_df) +
   geom_line(aes(x=date, y=X1,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in Ventrua County, CA\nfrom 2/24/2020 to 11/29/2020 (LASSO) MSE: 11911.98 (SoCal Data)") +
+  ggtitle("Reported Cases of COVID-19 in Ventrua County, CA\nfrom 2/24/2020 to 2/10/2021 (LASSO) MSE: 74860.24 (SoCal Data)") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month") 
 
@@ -401,7 +401,7 @@ ggplot(data=vc_df) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in Ventura County, CA\nfrom 2/24/2020 to 11/29/2020 (Glarma) MSE: 125700.8") +
+  ggtitle("Reported Cases of COVID-19 in Ventura County, CA\nfrom 2/24/2020 to 2/10/2021 (Glarma) MSE: 776740.4") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month")
 
@@ -428,7 +428,7 @@ ggplot(data=orange_df_1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   #xlab("Date") + ylab("COVID-19 Cases Reported") +
   #ggtitle(" **POISSON** Reported Cases of COVID-19 in Orange County, CA\nfrom 2/24/2020 to 11/29/2020") +
-  labs(title = "<span style='color:#F8766D;'>POISSON</span>  \nReported Cases of COVID-19 in Orange County, CA from 2/24/2020 to 11/29/2020",
+  labs(title = "<span style='color:#F8766D;'>POISSON</span>  \nReported Cases of COVID-19 in Orange County, CA from 2/24/2020 to 2/10/2021",
        x = "Date", y = "COVID-19 Cases Reported") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month") +
@@ -438,7 +438,7 @@ ggplot(data=orange_df_1) +
 ggplot(data=orange_df_1) +
   geom_segment(aes(x=date,xend=dplyr::lead(date), y=pred,yend=dplyr::lead(pred),colour="red"),lwd=1) +
   geom_segment(aes(x=date,xend=dplyr::lead(date), y=actual,yend=dplyr::lead(actual), colour="blue"),lwd=1) +
-  labs(title = "<span style='color:#F8766D;'>POISSON</span>  \nReported Cases of COVID-19 in Orange County, CA from 2/24/2020 to 11/29/2020",
+  labs(title = "<span style='color:#F8766D;'>POISSON</span>  \nReported Cases of COVID-19 in Orange County, CA from 2/24/2020 to 2/10/2021",
        x = "Date", y = "COVID-19 Cases Reported") +
   scale_color_manual(name="Reported Cases:",values=c("red"="#F8766D","blue"="#00BFC4"), labels=c("Actual", "Predicted")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month") +
@@ -448,7 +448,7 @@ ggplot(data=orange_df_1) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 11/29/2020 (Poisson) MSE: 65852.24") +
+  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 2/10/2021 (Poisson) MSE: 516270.1") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month")
 
@@ -488,7 +488,7 @@ ggplot(data=orange_df_2) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 11/29/2020 (Ridge) MSE: 47737.51") +
+  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 2/10/2021 (Ridge) MSE: 246237.5") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month")
 
@@ -527,7 +527,7 @@ ggplot(data=orange_df_3) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 11/29/2020 (Lasso) MSE: 48313.24") +
+  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 2/10/2021 (Lasso) MSE: 256939.6") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month")
 
@@ -566,7 +566,7 @@ ggplot(data=orange_df_4) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
   xlab("Date") + ylab("COVID-19 Cases Reported") +
-  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 11/29/2020 (Glarma) MSE: 37559.14") +
+  ggtitle("Reported Cases of COVID-19 in OC County, CA\nfrom 2/24/2020 to 2/10/2021 (Glarma) MSE: 193714.9") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month")
 
@@ -618,7 +618,7 @@ orange_df <- rbind(orange_df_1,orange_df_2,orange_df_3,orange_df_4)
 anim_a <- ggplot(data=orange_df) +
   geom_line(aes(x=date, y=pred,color="brown1"),lwd=1) +
   geom_line(aes(x=date, y=actual,color="dodgerblue1"),lwd=1) +
-  labs(title = "Method: {closest_state}  \nReported Cases of COVID-19 in Orange County, CA \n from 2/24/2020 to 11/29/2020",
+  labs(title = "Method: {closest_state}  \nReported Cases of COVID-19 in Orange County, CA \n from 2/24/2020 to 2/10/2021",
        x = "Date", y = "COVID-19 Cases Reported") +
   scale_color_discrete(name = "Reported Cases:", labels = c("Predicted", "Actual")) +
   scale_x_date(date_labels = "%b %d %Y", date_breaks = "1 month") +
@@ -627,4 +627,4 @@ anim_a <- ggplot(data=orange_df) +
   
 anim_a
 animation_to_save <- anim_a + exit_shrink()
-anim_save("first_saved_animation.gif", animation = animation_to_save)
+anim_save("orange_animation_02_10.gif", animation = animation_to_save)
