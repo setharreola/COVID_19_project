@@ -1,0 +1,12 @@
+---
+title: "COVID_19_project_README"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+This is a reposetory which contains code and work done for the Udergraduate COVID-19 research project over the fall 2020 semester.
