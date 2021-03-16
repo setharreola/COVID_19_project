@@ -1,0 +1,15 @@
+---
+title: "COVID Project README"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### COVID Project README
+
+This a reposetory which contains code and work done for the covid undergraduate reasearch project during the fall 2020 semester. 
+
