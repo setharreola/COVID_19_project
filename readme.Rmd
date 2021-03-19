@@ -15,3 +15,5 @@ This a reposetory which contains code and work done for the covid undergraduate 
 
 In completaion of this research a visualization dashboard was made and cam be viewed here (note it takes a few moments to load):
 https://setharreola.shinyapps.io/Covid_visualization_app/
+
+This project was also presented by myself and my team to CSUF faculty and Orange county reporters, this presentation can be viewed here: https://youtu.be/dzJqqdOd2ps
