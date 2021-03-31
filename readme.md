@@ -3,9 +3,11 @@
 This a reposetory which contains code and work done for the covid
 undergraduate reasearch project during the fall 2020 semester.
 
+This reseach was accepted and presented at NCUR (National Conference of
+Undergraduate Research)
+
 In completaion of this research a visualization dashboard was made and
-can be viewed here (please allow a few minutes for the page to load,
-dont be discouraged by the blank page):
+can be viewed here:
 <a href="https://setharreola.shinyapps.io/covid_app/" class="uri">https://setharreola.shinyapps.io/covid_app/</a>
 
 This project was also presented by myself and my team to CSUF faculty
