@@ -1,15 +1,14 @@
 ### COVID Project README
 
-This a reposetory which contains code and work done for the covid
+This a repository which contains code and work done for the covid
 undergraduate reasearch project during the fall 2020 semester.
 
-This reseach was accepted and presented at NCUR (National Conference of
+This research was accepted and presented at NCUR (National Conference of
 Undergraduate Research)
 
-In completaion of this research a visualization dashboard was made and
-can be viewed here:
-<a href="https://setharreola.shinyapps.io/covid_app/" class="uri">https://setharreola.shinyapps.io/covid_app/</a>
+In completion of this research a visualization dashboard was made and
+can be viewed here: <https://setharreola.shinyapps.io/covid_app/>
 
 This project was also presented by myself and my team to CSUF faculty
 and Orange county reporters, this presentation can be viewed here:
-<a href="https://youtu.be/dzJqqdOd2ps" class="uri">https://youtu.be/dzJqqdOd2ps</a>
+<https://youtu.be/dzJqqdOd2ps>
